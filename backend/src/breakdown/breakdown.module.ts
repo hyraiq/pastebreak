@@ -1,10 +1,16 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { PasteController } from './controller/paste.controller';
+import { PasteExtractorService } from './provider/paste-extractor.service';
+import { PasteExtractorInterface } from './provider/paste-extractor.interface';
 
 @Module({
   imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [PasteController],
+  providers: [
+    {
+      provide: PasteExtractorInterface,
+      useClass: PasteExtractorService,
+    },
+  ],
 })
 export class BreakdownModule {}
