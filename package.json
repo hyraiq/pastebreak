@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-"backend"
-],
+    "backend",
+    "frontend"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
