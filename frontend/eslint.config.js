@@ -20,4 +20,12 @@ export default tseslint.config([
       globals: globals.browser,
     },
   },
+
+  // Source: https://github.com/shadcn-ui/ui/issues/1534#issuecomment-2820638787
+  {
+    files: ['**/ui/**/*.ts', '**/ui/**/*.tsx', '**/tools/theme-provider.tsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  }
 ])

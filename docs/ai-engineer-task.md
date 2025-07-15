@@ -1,3 +1,5 @@
+# AI Engineer Tech Challenge Task
+
 ## Setup
 
 - Sign up with a free account at [LangSmith](https://smith.langchain.com)
@@ -37,8 +39,11 @@ npm run experiment
 - Iterate on the runnable to improve its performance
 
 Your task is to use LangSmith to evaluate the performance of
-the [ExtractPasteRunnable](../backend/src/breakdown/runnable/extract-paste.runnable.ts). The current implement is
+the [ExtractPasteRunnable](../backend/src/breakdown/runnable/extract-paste.runnable.ts). The current implementation is
 intentionally naive and doesn't suit the task very well!
+
+This runnable takes a user's paste buffer and returns a standardised breakdown of categories and line items so that they
+can use it elsewhere.
 
 The `npm run experiment` command will run the experiment, which takes each "example" from the Langsmith dataset and
 passes it to the runnable. Within Langsmith you will be able to see the output and the trace of the runnable.
@@ -69,8 +74,7 @@ If you can, please work from a branch within your private repository, then creat
 are finished - this will make it easier for us to review.
 
 Additionally once you're finished, invite [@tomtomau](https://github.com/tomtomau) to the repository so he can review
-code before
-the next call.
+code before the next call.
 
 ## Questions
 
