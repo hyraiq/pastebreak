@@ -30,7 +30,7 @@ cd frontend
 nvm use
 npm run start:dev
 
-# You should now be able to navigate to http://localhost:3000
+# You should now be able to navigate to http://localhost:4010
 ```
 
 ## General Architecture
