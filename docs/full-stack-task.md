@@ -26,6 +26,8 @@ npm run start:dev
 
 # In a separate terminal, run the frontend
 cd frontend
+# You need to use the right version of node here too
+nvm use
 npm run start:dev
 
 # You should now be able to navigate to http://localhost:3000
